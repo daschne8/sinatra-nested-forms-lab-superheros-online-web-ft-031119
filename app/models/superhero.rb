@@ -1,8 +1,8 @@
 class Superhero
   attr_reader :name,:power,:bio
 
-  def initialize(name,power,bio)
-    @name,@power,@bio = name,power,bio
+  def initialize(params)
+    @name,@power,@bio = params[:name],params[:power],params[:bio]
   end
 
 end
